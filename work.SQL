@@ -133,7 +133,7 @@ order by GWO.WOID
 SELECT @ROWCOUNT = MAX(ID) FROM #tempgfx
 -- print @rowcount
 -- This sets the counter to the first record 
--- Normally this would be zero in the database but I added an a record number field 
+-- Normally this would be zero in the database but I added a record number field 
 -- and it automatically increments by 1 starting with 1
 SET @counter = 1
 -- This is where we loop thru the results
