@@ -1,10 +1,10 @@
 -- I created this query to output the results of a query to a file that will be used to 
--- by a DOS program (yes DOS) and can not read line over 255 characters long
--- so I output the each field of every record to a new line delimited with 
+-- by a DOS program (yes DOS) because DOS can not read lines over 255 characters long.
+-- So to get around this limitation I output the each field of every record to a new line delimited with 
 -- ---start--- and ---end-- 
--- I used a scheduled task on the SQL server to run a sqlcmd that uses this sql to out put the results to a text file
--- turn off resluts count by turning nocount off
--- only programmers would have you turn something on by turning it off
+-- I used a scheduled task on the SQL server to run a sqlcmd that used this sql file to out output the results to a text file
+-- Turn off resluts count by turning nocount off
+-- only programmers will have you turn something on by turning it off :|
 SET NOCOUNT ON 
 -- Declare all my variables 
 -- rowcount holds the total number of records or rows
